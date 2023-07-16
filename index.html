@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <h1 id="header">Score counter</h1>
+     
+            
+        <div class="flex">
+            <div class="player">
+                <h1>Player 1:</h1>
+                <h2 id="count-el-p1">0</h2>
+                <button class="increment-btn" onclick="incrementP1()">ADD POINT</button>
+                <button class="save-btn" onclick="removeP1()">REMOVE POINT</button>
+                
+            </div>
+            <div class="player">
+                <h1>Player 2:</h1>
+                <h2 id="count-el-p2">0</h2>
+                <button class="increment-btn" onclick="incrementP2()">ADD POINT</button>
+                <button class="save-btn" onclick="removeP2()">REMOVE POINT</button>
+            </div>
+            
+        </div>
+        <div id="reset">
+                <button id="reset-btn" onclick="reset()"> RESET & SAVE </button>
+                <h3> Latest results </h3>
+                <p id="resultDisplay">  <br> </p>
+            </div>
+    <script src="index.js"> </script>
+    </body>
+</html>
